@@ -104,7 +104,7 @@ For the FeSe unit cell used here:
 2 Se atoms × 3 p orbitals = 6 orbitals
 ```
 
-````markdown
+
 giving a total of:
 
 ```text
