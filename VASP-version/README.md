@@ -22,6 +22,7 @@ check whether the projected DOS reproduces the VASP DOS
 if the projection is reasonable
    ↓
 run the multi-iteration CSC calculation
+```
 # FeSe ghostGA Example
 
 This repository provides a minimal example of applying ghostGA to FeSe.
