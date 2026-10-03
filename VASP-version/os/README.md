@@ -1,3 +1,15 @@
+### Orbital content of the low-energy model
+
+For this FeSe unit cell, the projected local-orbital basis contains 16
+atomic-like orbitals:
+
+- 2 Fe atoms × 5 d orbitals = 10 Fe-d orbitals
+- 2 Se atoms × 3 p orbitals = 6 Se-p orbitals
+
+giving a total of:
+
+```text
+10 + 6 = 16 local orbitals
 # Single-Iteration Validation Calculation
 
 This directory is used to perform a short ghostGA calculation before starting the full charge-self-consistent (CSC) calculation.
