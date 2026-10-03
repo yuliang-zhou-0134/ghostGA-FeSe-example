@@ -97,37 +97,13 @@ fese.win
 
 The projected subspace contains Fe-d and Se-p orbitals.
 
-For the FeSe unit cell used here:
+For the FeSe unit cell used here, the projected subspace contains 10 Fe-d
+orbitals (2 Fe × 5 d) and 6 Se-p orbitals (2 Se × 3 p), giving 16 Wannier
+orbitals in total. Therefore, `num_wann = 16` is used.
 
-```text
-2 Fe atoms × 5 d orbitals = 10 orbitals
-2 Se atoms × 3 p orbitals = 6 orbitals
-```
-
-
-giving a total of:
-
-```text
-10 + 6 = 16 Wannier orbitals
-```
-
-Therefore,
-
-```text
-num_wann = 16
-```
-
-is used for the target Wannier subspace.
-
-In this particular setup,
-
-```text
-num_bands = 16
-```
-
-is also used. Note that `num_wann` and `num_bands` represent different
-quantities and do not generally have to be equal.
-```
+In this particular setup, `num_bands = 16` is also used. `num_wann` and
+`num_bands` represent different quantities and do not generally have to be
+equal.
 
 The orbital projections are:
 
