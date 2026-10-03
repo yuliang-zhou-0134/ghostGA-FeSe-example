@@ -10,6 +10,7 @@ giving a total of:
 
 ```text
 10 + 6 = 16 local orbitals
+```
 # Single-Iteration Validation Calculation
 
 This directory is used to perform a short ghostGA calculation before starting the full charge-self-consistent (CSC) calculation.
