@@ -104,17 +104,29 @@ For the FeSe unit cell used here:
 2 Se atoms × 3 p orbitals = 6 orbitals
 ```
 
+```markdown
 giving a total of:
 
 ```text
 10 + 6 = 16 Wannier orbitals
 ```
 
-Therefore, the present setup uses:
+Therefore,
 
 ```text
 num_wann = 16
+```
+
+is used for the target Wannier subspace.
+
+In this particular setup,
+
+```text
 num_bands = 16
+```
+
+is also used. Note that `num_wann` and `num_bands` represent different
+quantities and do not generally have to be equal.
 ```
 
 The orbital projections are:
