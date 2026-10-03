@@ -1,3 +1,27 @@
+## Basic Concepts
+
+This example assumes that the user is already familiar with basic VASP calculations.
+
+A few terms used in this workflow are:
+
+- **PLO (Projected Local Orbital):** a projection of the VASP Kohn-Sham states onto selected atomic-like orbitals. In this example, the low-energy model contains Fe-d and Se-p states.
+- **Low-energy model:** the reduced electronic subspace that is passed from the DFT calculation to ghostGA.
+- **Single-iteration validation:** a short ghostGA run used to check whether the PLO setup is reasonable before starting a longer calculation.
+- **CSC (Charge Self-Consistent):** an iterative calculation in which the DFT and ghostGA parts are updated repeatedly until convergence.
+- **Band window:** the range of VASP bands included when constructing the projected low-energy model.
+
+The main idea of this example is therefore:
+
+```text
+VASP SCF
+   ↓
+construct Fe-d / Se-p projected orbitals
+   ↓
+check whether the projected DOS reproduces the VASP DOS
+   ↓
+if the projection is reasonable
+   ↓
+run the multi-iteration CSC calculation
 # FeSe ghostGA Example
 
 This repository provides a minimal example of applying ghostGA to FeSe.
